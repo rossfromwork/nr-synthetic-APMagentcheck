@@ -1,5 +1,5 @@
 # nr-syntheticbrowser-APMagentcheck
-A ridiculous New Relic Synethic browser script to check agent version and write a custom attribute which an Alert can be setup to monitor
+A ridiculous New Relic Synthetic browser script to check APM agent version and write a custom attribute which an Alert can be setup to monitor
 
 # Key things to know: 
 
@@ -25,4 +25,5 @@ You can then set Threshold to be whatever you want, obviously anything more than
 
 # Things to improve
 - Alerting NRQL to compare as a % of overall APM agents deployed and alert on that. Rather than a specific agent count.
-- Current advised Alert thresholds and data agg windows aren't necassarily accurate. Need more testing to clarify. 
+- Current advised Alert thresholds and data agg windows aren't necassarily accurate. Need more testing to clarify.
+- Infra version at some point
