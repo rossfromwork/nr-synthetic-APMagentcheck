@@ -12,7 +12,7 @@ A ridiculous New Relic Synthetic browser script to check APM agent version and w
 * It's not really necassary to run your Scripted Browser check frequently. Keep in mind that the slowest frequency a Scripted Browser check can run is 1 day.
   * Alert condition time window will have to be longer (1hour for example) and threshold period will also have to be similar for this to trigger your condition.
 
-# NRQL to check the custom attirbutes are being written: 
+# NRQL to check the custom attributes are being written: 
 
 `FROM SyntheticCheck SELECT custom.AgentType,custom.CountOfOutdatedAgents,custom.CheckDate WHERE monitorId = '<insertmonitoridhere>' SINCE 1 day ago`
 
