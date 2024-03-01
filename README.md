@@ -24,4 +24,5 @@ For each Scripted Browser you deploy, suggest creating an Alert Condition but gr
 You can then set Threshold to be whatever you want, obviously anything more than 0. It really depends on how many APM Agents you already have. 
 
 # Things to improve
-- Alerting NRQL to compare as a % of overall APM agents deployed and alert on that. Rather than a specific agent count. 
+- Alerting NRQL to compare as a % of overall APM agents deployed and alert on that. Rather than a specific agent count.
+- Current advised Alert thresholds and data agg windows aren't necassarily accurate. Need more testing to clarify. 
