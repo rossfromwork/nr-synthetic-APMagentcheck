@@ -8,6 +8,7 @@ A ridiculous New Relic Synthetic browser script to check APM agent version and w
   * MYACCOUNT_ID - Your NR Account ID. Required for GraphQL Queries. 
 * You need to set the AgentType var for the APM agent language you wish to check.
 * Recommend deploying a Scripted Browser check for each APM Agent language you are running.
+* Tested only with Scripted Browser CHROME100
 * Larger APM deployments may hit issues as Scripted Browser scripts can only run for a maximum of 3 minutes (180 seconds).
 * It's not really necassary to run your Scripted Browser check frequently. Keep in mind that the slowest frequency a Scripted Browser check can run is 1 day.
   * Alert condition time window will have to be longer (1hour for example) and threshold period will also have to be similar for this to trigger your condition.
