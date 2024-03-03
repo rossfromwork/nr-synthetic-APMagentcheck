@@ -21,7 +21,18 @@ For each Scripted Browser you deploy, suggest creating an Alert Condition but gr
 
 `FROM SyntheticCheck SELECT latest(custom.CountOfOutdatedAgents) WHERE monitorId = '<insertmonitoridhere>' AND custom.AgentType = '<APMLanguage>'`
 
-You can then set Threshold to be whatever you want, obviously anything more than 0. It really depends on how many APM Agents you already have. 
+# Alert Condition FYI 
+* You can then set Threshold to be whatever you want, obviously anything more than 0. It really depends on how many APM Agents you already have.
+* For the Alert Condition - Signal Behaviour settings, I set the following,
+  * Window duration: 6 hours
+  * Sliding window aggregration: Enabled
+  * Slide by internal: 15 mins
+  * Streaming method: Event timer
+* For the Alert Condition - Gaps, evaluation and loss of signal settings, I set the following,
+  * Fill data gaps with: Last know value
+* For the Alert Conditions - Thresholds, I set the following,
+  * Critical (or Warning): Query result is ABOVE or Equal 1 at least once in 24 hours.
+  * I did this because the check only runs 1 every 24 hours.  
 
 # Things to improve
 - Alerting NRQL to compare as a % of overall APM agents deployed and alert on that. Rather than a specific agent count.
