@@ -1,4 +1,4 @@
-# nr-syntheticbrowser-APMagentcheck
+# nr-synthetic-APMagentcheck
 A ridiculous New Relic Synthetic browser script to check APM agent version and write a custom attribute which an Alert can be setup to monitor
 
 # Key things to know: 
