@@ -1,3 +1,6 @@
+// This particular js file is not longer being worked on. 
+// Migrated the script to work within the New Relic Synethic Scripted API monitoring env instead. See scriptedapi.js within this same repo.
+
 // Import the https module
 var https = require("https");
 
